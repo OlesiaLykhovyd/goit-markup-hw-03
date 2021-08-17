@@ -69,6 +69,8 @@ body {
 
 /* Logo */
 .logo {
+  margin-right: 93px;
+
   color: var(--accent-color);
 
   font-family: Raleway, sans-serif;
@@ -87,6 +89,19 @@ body {
 }
 
 /* Navigation */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link {
   color: var(--title-text-color);
 
@@ -105,6 +120,15 @@ body {
 }
 
 /* Contacts */
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-list:not(:last-child) {
+  margin-right: 50px;
+}
 
 .contacts-item {
   color: var(--primary-text-color);
