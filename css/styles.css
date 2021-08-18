@@ -46,9 +46,9 @@ body {
 }
 
 .container {
-  margin: 0 auto;
   width: 1200px;
-  padding-left: 0 15px;
+  padding: 0 15px;
+  margin: 0 auto;
   outline: 2px solid tomato;
 }
 
@@ -103,6 +103,10 @@ body {
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -191,6 +195,15 @@ body {
 /* Sections */
 
 /* Section Benefits */
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits-item {
+  width: 270px;
+}
+
 .benefits-title {
   margin-bottom: 10px;
 
@@ -217,9 +230,36 @@ body {
   padding-top: 0;
 }
 
+.work {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-image {
+  display: block;
+}
+
 /* Section team */
 .section-team {
   background-color: var(--bcg-color-pink);
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-item {
+  background-color: var(--white-color);
+}
+
+.team-image {
+  display: block;
 }
 
 .team-title {
@@ -248,7 +288,8 @@ body {
   background-color: var(--bcg-color-grey);
 }
 
-.footer-logo {
+.footer-link {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -274,10 +315,26 @@ address {
   color: var(--accent-color);
 }
 
+.footer-address,
+.footer-contacts {
+  display: block;
+}
+
 /* PORTFOLIO */
+
+.hidden {
+  display: none;
+}
 /* Buttons */
 .filter {
+  display: flex;
+  justify-content: center;
+
   margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-button {
@@ -305,8 +362,26 @@ address {
 }
 
 /* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-box {
+  padding: 20px 24px;
+}
+
+.gallery-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.gallery-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
 .gallery-image {
-  margin-bottom: 20px;
+  display: block;
 }
 
 .gallery-title {

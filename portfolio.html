@@ -17,10 +17,10 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
+        <div class="container main-nav">
+            <a href="./index.html" lang="en" class="logo">Web<span class="header-logo">Studio</span></a>
             <nav>
-                <a href="./index.html" lang="en" class="logo">Web<span class="header-logo">Studio</span></a>
-                <ul class="nav">
+                <ul class="nav list">
                     <li class="nav-item">
                         <a href="./index.html" class="nav-link current">Студия</a>
                     </li>
@@ -33,8 +33,9 @@
                 </ul>
             </nav>
             <ul class="contacts">
-                <li><a href="mailto:info@devstudio.com" class="contacts-item">info@devstudio.com</a></li>
-                <li><a href="tell:+380961111111" class="contacts-item">+38 096 111 11 11</a></li>
+                <li class="contacts-list"><a href="mailto:info@devstudio.com" class="contacts-item">info@devstudio.com</a>
+                </li>
+                <li class="contacts-list"><a href="tell:+380961111111" class="contacts-item">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -42,7 +43,7 @@
         <!-- Portfolio -->
         <section class="section section-three">
             <div class="container">
-                <h1>Портфоліо</h1>
+                <h1 class="hidden">Портфоліо</h1>
                 <!-- Buttons -->
                 <ul class="filter">
                     <li class="filter-item">
@@ -61,86 +62,106 @@
                         <button type="button" class="filter-button">Маркетинг</button>
                     </li>
                 </ul>
-            </div>
+                </div>
+            
             <!-- Gallery -->
             <div class="container">
                 <ul class="gallery">
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
                             <img class="gallery-image" src="./images/img-8-min.jpg" width="370" height="294" alt="фото компьютера">
-                            <h2 class="gallery-title">Технокряк</h2>
-                            <p class="gallery-text">Веб-сайт</p>
+                            <div class="gallery-box">
+                                <h2 class="gallery-title">Технокряк</h2>
+                                <p class="gallery-text">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
                             <img class="gallery-image" src="./images/img-9-min.jpg" width="370" height="294" alt="игроки баскетбола борются за мяч">
-                            <h2 class="gallery-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                            <p class="gallery-text">Дизайн</p>
+                            <div class="gallery-box">
+                                <h2 class="gallery-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                                <p class="gallery-text">Дизайн</p>
+                            </div>
                         </a>
                     </li>
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
                             <img class="gallery-image" src="./images/img-10-min.jpg" width="370" height="294" alt="лого ресторана">
-                            <h2 class="gallery-title">Ресторан <span lang="en">Seafood</span></h2>
-                            <p class="gallery-text">Приложение</p>
+                            <div class="gallery-box">
+                                <h2 class="gallery-title">Ресторан <span lang="en">Seafood</span></h2>
+                                <p class="gallery-text">Приложение</p>
+                            </div>
                         </a>
                     </li>
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
                             <img class="gallery-image" src="./images/img-11-min.jpg" width="370" height="294" alt="наушники">
-                            <h2 class="gallery-title">Проект <span lang="en">Prime</span></h2>
-                            <p class="gallery-text">Маркетинг</p>
+                            <div class="gallery-box">
+                                <h2 class="gallery-title">Проект <span lang="en">Prime</span></h2>
+                                <p class="gallery-text">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
                             <img class="gallery-image" src="./images/img-12-min.jpg" width="370" height="294" alt="коробочки">
-                            <h2 class="gallery-title">Проект <span lang="en">Boxes</span></h2>
-                            <p class="gallery-text">Приложение</p>
+                            <div class="gallery-box">
+                                <h2 class="gallery-title">Проект <span lang="en">Boxes</span></h2>
+                                <p class="gallery-text">Приложение</p>
+                            </div>
                         </a>
                     </li>
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
                             <img class="gallery-image" src="./images/img-13-min.jpg" width="370" height="294" alt="фото экрана компьютера с открытым вебсайтом">
-                            <h2 class="gallery-title" lang="en">Inspiration has no Borders</h2>
-                            <p class="gallery-text">Веб-сайт</p>
+                            <div class="gallery-box">
+                                <h2 class="gallery-title" lang="en">Inspiration has no Borders</h2>
+                                <p class="gallery-text">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
                             <img class="gallery-image" src="./images/img-14-min.jpg" width="370" height="294" alt="книга">
-                            <h2 class="gallery-title">Издание <span lang="en">Limited Edition</span></h2>
-                            <p class="gallery-text">Дизайн</p>
+                            <div class="gallery-box">
+                                <h2 class="gallery-title">Издание <span lang="en">Limited Edition</span></h2>
+                                <p class="gallery-text">Дизайн</p>
+                            </div>
                         </a>
                     </li>
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
                             <img class="gallery-image" src="./images/img-15-min.jpg" width="370" height="294" alt="лейбел">
-                            <h2 class="gallery-title">Проект <span lang="en">LAB</span></h2>
-                            <p class="gallery-text">Маркетинг</p>
+                            <div class="gallery-box">
+                                <h2 class="gallery-title">Проект <span lang="en">LAB</span></h2>
+                                <p class="gallery-text">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
                             <img class="gallery-image" src="./images/img-16-min.jpg" width="370" height="294" alt="фото компьютера">
-                            <h2 class="gallery-title" lang="en">Growing Business</h2>
-                            <p class="gallery-text">Приложение</p>
+                            <div class="gallery-box">
+                                <h2 class="gallery-title" lang="en">Growing Business</h2>
+                                <p class="gallery-text">Приложение</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </div>
+            
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <a href="./index.html" lang="en" class="logo">Web<span class="footer-logo">Studio</span></a>
+            <a href="./index.html" lang="en" class="logo footer-link">Web<span class="footer-logo">Studio</span></a>
             <address>
-                <ul class="list">
+                <ul class="footer-list">
                     <li><a href="https://goo.gl/maps/n3rkYSff5Tyg9zx98" rel="noopener noreferrer" class="footer-address">г.
                             Киев, пр-т Леси Украинки, 26</a></li>
                     <li><a href="mailto:info@devstudio.com" class="footer-contacts footer-mail">info@example.com</a></li>
-                    <li><a href="tell:+380961111111" class="footer-contacts footer-phone">+38 099 111 11 11</a></li>
+                    <li><a href="tell:+380961111111" class="footer-contacts">+38 099 111 11 11</a></li>
                 </ul>
             </address>
         </div>
